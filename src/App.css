@@ -1,0 +1,59 @@
+.container{
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(150, 241, 241);
+}
+.data-input{
+  width: 450px;
+  max-width: 450px;
+  margin: 0 auto;
+  height:320px;
+}
+.title{
+  font-weight: 800;
+  font-size: 25pt;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(221, 182, 10);
+  font-style: normal;
+  font-family: Marker Felt;
+  text-shadow: 5px 4px 3px #000;
+}
+.input-field{
+  width: auto;
+  height: 25px;  
+  padding: 12px;
+  margin-top: 12px;
+  text-align: center;
+}
+.input-field>form>.textCity{
+  width:250px;
+  padding: 8px;
+  border:none;
+  border-bottom: 2px solid rgb(221, 182, 10);
+  background-color: inherit;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+}
+.content{
+  text-align: center;
+  margin-top: 8px;
+}
+.city{
+  padding: 8px;
+  font-size: 18pt;
+  font-weight: 500;
+}
+.temp{
+  padding: 8px;
+  font-size: 38pt;
+  font-weight: 800;
+}
+.desc{
+  padding: 8px;
+  font-weight: 500;
+  font-style: italic;
+}
