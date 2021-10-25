@@ -1,59 +1,84 @@
+
 .container{
-  width: auto;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: rgb(150, 241, 241);
+    width:85%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    background-color: #003049;
 }
-.data-input{
-  width: 450px;
-  max-width: 450px;
-  margin: 0 auto;
-  height:320px;
+
+@media only screen and (max-width:1076px){
+    .container{
+        width:85%;
+        margin: 0 auto;
+        margin-top: 8%;
+    }
 }
-.title{
-  font-weight: 800;
-  font-size: 25pt;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(221, 182, 10);
-  font-style: normal;
-  font-family: Marker Felt;
-  text-shadow: 5px 4px 3px #000;
+@media only screen and (max-width:799px){
+    .container{
+        margin-bottom: 5rem;
+    }
+    .col{
+        width: 100%;
+        margin-top: .2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid #fff; 
+    }
+    .row:nth-child(5){        
+        border-bottom: none;
+    }
+    
+    .date-field{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+    }
+    .image{
+        width: 20%;
+        border-bottom: none;
+    }
+    .image img{
+        width: inherit;
+        height: 5rem;
+    }
+    .degree-field{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}/* 
+@media only screen and (max-width:683px){
+    .col{
+        width: 100%;
+        margin-top: .2rem;
+        display: flex;
+        flex-direction: row;
+    }.image{
+        width: 60%;
+        background-color: blue;
+    }
+    .image img{
+        width: inherit;
+        background-color: blue;
+    }
+   
 }
-.input-field{
-  width: auto;
-  height: 25px;  
-  padding: 12px;
-  margin-top: 12px;
-  text-align: center;
-}
-.input-field>form>.textCity{
-  width:250px;
-  padding: 8px;
-  border:none;
-  border-bottom: 2px solid rgb(221, 182, 10);
-  background-color: inherit;
-  outline: none;
-  text-align: center;
-  font-size: 15px;
-}
-.content{
-  text-align: center;
-  margin-top: 8px;
-}
-.city{
-  padding: 8px;
-  font-size: 18pt;
-  font-weight: 500;
-}
-.temp{
-  padding: 8px;
-  font-size: 38pt;
-  font-weight: 800;
-}
-.desc{
-  padding: 8px;
-  font-weight: 500;
-  font-style: italic;
-}
+@media only screen and (max-width:607px) and ( min-width:500px){
+    .container{
+        width:85%;
+        margin: 0 auto;
+        margin-top: 8%;
+        background-color: aqua;
+    }
+    .date-field{
+        width:5rem;
+        border-bottom: 1px solid #fff;
+    }
+} */
